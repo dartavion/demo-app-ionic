@@ -76,7 +76,7 @@
     <key>IonAppId</key>
     <string>78bbfa26</string>
     <key>IonChannelName</key>
-    <string>Development</string>
+    <string>Staging</string>
     <key>IonUpdateMethod</key>
     <string>background</string>
     <key>IonMaxVersions</key>
