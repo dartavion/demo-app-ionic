@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ExampleService } from '../services/example.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  api;
+  environment;
+
+  example$ = this.exampleService.get();
+  constructor(private exampleService: ExampleService) {
+    this.api = environment.api;
+    this.environment = environment.name;
+    console.log(this.api);
+    console.log(this.environment);
+  }
 
 }
